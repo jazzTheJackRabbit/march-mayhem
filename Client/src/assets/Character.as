@@ -1,0 +1,1 @@
+﻿package assets {		import flash.display.MovieClip;			public class Character extends MovieClip {						public function Character() {			// constructor code		}	}	}

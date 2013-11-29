@@ -1,0 +1,1 @@
+﻿package assets {		import flash.display.MovieClip;			public class Settings extends MovieClip {						public function Settings() {			// constructor code		}	}	}

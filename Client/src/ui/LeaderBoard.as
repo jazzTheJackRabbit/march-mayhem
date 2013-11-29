@@ -1,0 +1,1 @@
+﻿package ui{		import flash.display.DisplayObject;	import flash.display.MovieClip;	public class LeaderBoard extends MovieClip{				public function LeaderBoard():void{			init();		}				private function init():void{					}	}}

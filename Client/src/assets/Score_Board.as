@@ -1,0 +1,1 @@
+﻿package assets {		import flash.display.MovieClip;			public class Score_Board extends MovieClip {						public function Score_Board() {			// constructor code		}	}	}

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- We get the name of the app out of the information fetched -->
+    <title>Flash Debugger</title>
+    <link rel="stylesheet" href="../../Content/stylesheets//screen.css" media="screen">
+
+     <script type="text/javascript" src="../../Content/scripts//swfobject.min.js"></script>
+     <script type="text/javascript" src="../../Content/scripts//flashvars_js.js"></script>
+     <script>
+      function popup(pageURL, title,w,h) {
+        var left = (screen.width/2)-(w/2);
+        var top = (screen.height/2)-(h/2);
+        var targetWin = window.open(
+          pageURL,
+          title,
+          'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left
+          );
+      }
+	  var flashvars = {};
+		flashvars.gateway = "http://basket-madness.herokuapp.com/Gateway/";
+		flashvars.user_token = "AAAErA2LhBH8BAIKOTZBbMWcR35Np6ZATlZAeS54kFmXXfH9PMiHu3eC4DBVj0oKf5LdbifZBvmDfGsInfRE2JRkyFyiaI6a9uwjekkZBGFQZDZD";
+		flashvars.user = "FB:644850560";
+		flashvars.username = "Karthik Kumar";
+		flashvars.imagepath = "../../Content/images/";
+		
+	  var params = {};
+		params.menu = "false";
+		params.SCALE = "exactfit";
+		params.wmode = "transparent";
+		params.flashvars = "name1=hello&name2=world&name3=foobar";
+		 
+	  var attributes = {};
+		attributes.id = "myDynamicContent";
+		attributes.name = "myDynamicContent";
+
+	  var client_swf = "../../Client/bin-release/client.swf";
+	  swfobject.embedSWF(client_swf, "content", "1080", "707", "10.0.0","expressInstall.swf", flashvars, params, attributes);	  
+    </script>
+    <!--[if IE]>
+      <script>
+        var tags = ['header', 'section'];
+        while(tags.length)
+          document.createElement(tags.pop());
+      </script>
+    <![endif]-->
+  </head>
+  <body style="width:100%; height:100%; margin:0px; padding:0px;  background-color:#000000; text-align:center; color: #ffffff; font-family:sans-serif">
+    <!-- <section id="game" class="clearfix"> -->
+	<div id="content" style="width:100%; height:100%; margin:0px; padding:0px;  background-color:#000000; text-align:center;"> 
+			<span class="loadingGame">Loading Game...</span><br/>
+			<img src="../../Content/images//ProdSplashLogo.png" alt="Mayhem in Peril" border="0"/>
+			<span class="upgradeFlash">If your game does not load within 10 seconds, you may need to upgrade your version of Flash.  Please do so by clicking <a target="_new" href="www.adobe.com/support/flashplayer/downloads.html">here</a></span>
+	</div>
+   <!-- </section> -->
+  </body>
+</html>

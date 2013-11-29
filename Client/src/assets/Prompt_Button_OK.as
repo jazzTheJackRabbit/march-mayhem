@@ -1,0 +1,1 @@
+﻿package assets {		import flash.display.SimpleButton;			public class Prompt_Button_OK extends SimpleButton {						public function Prompt_Button_OK() {			// constructor code		}	}	}

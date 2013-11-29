@@ -1,0 +1,1 @@
+﻿package assets {		import flash.display.MovieClip;			public class Invite_Screen extends MovieClip {						public function Invite_Screen() {			// constructor code		}	}	}
